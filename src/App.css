@@ -1,11 +1,104 @@
-.App {
-  text-align: center;
+body {
+
+font-family: 'Work Sans', sans-serif;
+}
+
+
+.react-responsive-modal-root {
+
+  z-index: 100000 !important;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+p{
+  font-size: 13px !important;
+}
+
+
+span{
+  font-size: 12px !important;
+}
+
+
+.slider-cart{
+  display: flex;
+}
+
+/* Customize the "Next" arrow styles */
+.slick-arrow.slick-next {
+  display: block;
+  margin: 0;
+  position: absolute;
+  right: 2%;
+  z-index: 1111;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-arrow.slick-next:before {
+  content: "→"; /* You can use any arrow character or icon here */
+  font-size: 24px;
+  line-height: 2;
+  opacity: 1;
+  color: black;
+  padding: 0;
+}
+
+.sliderr:hover .slick-arrow.slick-next {
+
+  color: black;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* Customize the "Previous" arrow styles */
+.slick-arrow.slick-prev {
+  display: block;
+  margin: 0;
+  position: absolute;
+  left: 2%;
+  z-index: 1111;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-arrow.slick-prev:before {
+  content: "←"; /* You can use any arrow character or icon here */
+  font-size: 24px;
+  line-height: 2;
+  opacity: 1;
+  color: black;
+  padding: 0;
+}
+
+.sliderr:hover .slick-arrow.slick-prev {
+  color: black;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.non-sliderrr:hover .slick-arrow.slick-next {
+
+  color: black;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+
+
+.non-sliderrr:hover .slick-arrow.slick-prev {
+  color: black;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -32,7 +125,137 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+
+
+.cover {
+  opacity: 0;
+}
+
+.tabbing-image:hover .cover {
+  position: absolute;
+  opacity: 1;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+ padding: 20px;
+  height: max-content;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  background-color: black;
+  color: #fff;
+}
+
+
+
+&__caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+}
+
+.tabbing-image {
+  position: relative;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+ border-radius: 0;
+  color: red;
+  font-weight: 600;
+  border-bottom: 2px solid red;
+}
+
+.nav-pills {
+
+   --bs-nav-pills-link-active-color: #fff; 
+   --bs-nav-pills-link-active-bg: transparent; 
+}
+
+.nav-link {
+  display: block;
+  padding: 0  !important;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: black;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+small{
+  padding: 0 !important;
+
+}
+
+h2{
+  padding: 0 !important;
+}
+
+
+.mystyle {
+  color: red;
+  font-weight: 600;
+border-bottom: 1px solid red;
+
+}
+
+.entertainment_listing{
+  text-align: center;
+}
+
+#filter{
+  padding: 0;
+}
+
+a.bm-item {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 2;
+}
+
+.iscjgw {
+  /* display: flex; */
+   height: auto !important;
+  /* overflow: hidden; */
+}
+
+
+
+button.sc-dmyDmy.kTsNbb {
+  color: black;
+  /* background: red; */
+
+}
+
+
+li.sc-gLLuHO.bbFncq a {
+  color: white;
+  text-decoration: dashed;
+}
+
+
+ul.sc-jTQDJr.jUDVfn {
+  position: relative;
+  z-index: 1000000;
+}
+

@@ -1,0 +1,105 @@
+.Bra-sorting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+}
+
+.Bradisplayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+ 
+
+
+.sale-main{
+    border-top: 1px solid #a8a5a5;
+    line-height: 2;
+}
+
+.sale-main ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    border-bottom: 1px solid #c8c5c5;
+    line-height: 2;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.Braproducts {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.Braproducts .slider-cart {
+        position: absolute;
+        z-index: 1111;
+        bottom: 22%;
+        right: 5%;
+        cursor: pointer;
+       
+        display: none;
+}
+
+.Braproducts:hover .slider-cart {
+    display: flex;
+    gap: 7px;
+
+}
+
+.Braproducts small {
+    color: black;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.Braproducts p {
+    color: black;
+    font-weight: 600;
+}
+
+
+
+
+.Braproducts s {
+    color: red;
+}
+
+
+
+.Bra-inner-banner img{
+width: 100%;
+height: 450px;
+    object-fit: cover !important;
+    margin-top: 30px;
+}
+
+.filterdisplay {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:567px){
+    .sale-main ul {
+        display: flex;
+        list-style: none;
+        gap: 0 20px;
+        border-bottom: 1px solid #c8c5c5;
+        line-height: 3;
+        font-size: 12px;
+        font-weight: 500;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+}

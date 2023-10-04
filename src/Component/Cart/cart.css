@@ -1,0 +1,165 @@
+.cart_promotion_offer{
+    background-color: #eee;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.cart_promotion_offer a{
+    text-decoration: none;
+    color: black;
+}
+
+.product_div small{
+    display: block;
+font-size: 12px;
+}
+
+.product_div_icons div{
+    display: flex;
+    gap: 10px;
+}
+
+.product_div_icons{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product_div{
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.promotion_refferal .accordion-button {
+    background-color: #eee;
+    color: black;
+    font-weight: 500;
+}
+
+.promotion_refferal input{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border: none;
+}
+
+.promotion_refferal a{
+    color: black;
+}
+
+.promotion_refferal button{
+  margin: auto;
+  text-align: center;
+    outline: none;
+   
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 8px 15px;
+}
+
+.cart_billing{
+    padding: 15px 0;
+}
+
+.cart_billing div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.cart_billing p{
+ font-weight: 600;
+}
+
+.cart-total div{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.cart-total p{
+    font-weight: 600;
+}
+
+.cart-total .btn{
+
+background-color: black;
+color: white;
+width: 100%;
+border-radius: 0;
+margin: 10px 0;
+}
+
+.cart_extra_info{
+    border-top:1px solid #ccc ;
+    padding: 15px 0;
+}
+
+.cart_extra_info div{
+    display: flex;
+    gap: 20px;
+}
+
+.cart_quantity_div{
+    display: flex;
+}
+
+
+.quantity-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+  }
+  .quantity-input:focus {
+    background: red;
+  }
+  
+  .quantity-input__modifier,
+  .quantity-input__screen {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    outline: none;
+  }
+  
+  .quantity-input__modifier {
+    padding: 0.7rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    background: #f3f3f3;
+    color: #888;
+    border: 0 solid #dbdbdb;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+  .quantity-input__modifier:hover {
+    background: #dadada;
+    color: #555555;
+  }
+  .quantity-input__modifier--left {
+    border-radius: 3px 0 0 3px;
+  }
+  .quantity-input__modifier--right {
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .quantity-input__screen {
+    width: 4rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border: 0;
+    border-top: 0 solid #dbdbdb;
+    border-bottom: 0 solid #dbdbdb;
+    text-align: center;
+  }
+  

@@ -1,0 +1,65 @@
+.Lingerie-sorting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+}
+
+.Lingeriedisplayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.Lingerieproducts {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.Lingerieproducts:hover .slider-cart {
+    display: flex;
+    gap: 7px;
+
+}
+
+.Lingerieproducts .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 28%;
+    right: 5%;
+    cursor: pointer;
+    
+    display: none;
+}
+
+
+.Lingerieproducts small {
+color: black;
+display: -webkit-inline-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+clear: both;
+}
+
+
+.Lingerieproducts p {
+    color: black;
+    font-weight: 600;
+}
+
+
+
+.Lingerieproducts s {
+    color: red;
+}
+
+.Lingerie-inner-banner img{
+width: 100%;
+height: 450px;
+    object-fit: cover !important;
+    margin-top: 30px;
+}

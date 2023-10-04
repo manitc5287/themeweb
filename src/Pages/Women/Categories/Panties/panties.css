@@ -1,0 +1,116 @@
+.Panties-sorting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+}
+
+.Pantiesdisplayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.panties-banner{
+    background-image: url(../../../../assets/women/Panties/pantiespng.png);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.panties-main{
+    border-top: 1px solid #a8a5a5;
+    line-height: 2;
+
+}
+
+.panties-main ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    border-bottom: 1px solid #c8c5c5;
+    line-height: 3;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Pantiesproducts {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+
+
+.Pantiesproducts p {
+    color: black;
+    font-weight: 600;
+}
+
+.Pantiesproducts:hover .slider-cart {
+    display: flex;
+    gap: 7px;
+
+}
+
+.Pantiesproducts .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 22%;
+    right: 5%;
+    cursor: pointer;
+   
+    display: none;
+}
+
+
+
+.Pantiesproducts small {
+    color: black;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    clear: both;
+
+}
+
+.Pantiesproducts s {
+    color: red;
+}
+
+
+
+.Panties-inner-banner img{
+width: 100%;
+height: 450px;
+    object-fit: cover !important;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width:567px){
+    .panties-main ul {
+        display: flex;
+        list-style: none;
+        gap: 0 20px;
+        border-bottom: 1px solid #c8c5c5;
+        line-height: 3;
+        font-size: 12px;
+        font-weight: 500;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .panties-main{
+        text-align: center;
+      }
+}

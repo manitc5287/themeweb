@@ -1,0 +1,28 @@
+.Gifts{
+    background-color: antiquewhite;
+    padding-top: 30px;
+}
+
+.gift-product-div img{
+    width: 400px;
+    object-fit: cover !important;
+    height: 350px;
+}
+
+.Gifts a{
+    text-align: center;
+    color: black;
+    padding: 130px 0 ;
+}
+
+.icon-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.icon-div div{
+    border: 1px solid black;
+    padding: 40px;
+}

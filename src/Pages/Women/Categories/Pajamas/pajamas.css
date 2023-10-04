@@ -1,0 +1,104 @@
+.Pajamas-sorting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+}
+
+.Pajamasproducts .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 25%;
+    right: 5%;
+    cursor: pointer;
+    
+    display: none;
+}
+
+.Pajamaswear-banner {
+    background-image: url(http://localhost:3000/static/media/banner.f5701b48827cf11f43a9.png);
+    height: 160px;
+    background-position: center center;
+    background-size: cover;
+    background-color: #f0ebe1;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Pajamaswear-banner a{
+ 
+    color: black;
+    padding:50px 30px;
+  
+}
+
+
+.Pajamaswear-banner a:hover{
+
+    color: #424242;
+
+  
+}
+
+.Pajamasdisplayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.Pajamasproducts {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.Pajamasproducts:hover .slider-cart {
+    display: flex;
+    gap: 7px;
+
+}
+
+
+.Pajamasproducts p {
+    color: black;
+    font-weight: 600;
+}
+
+
+.Pajamasproducts .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 22%;
+    right: 5%;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    display: none;
+}
+
+
+.Pajamasproducts small {
+    color: black;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    clear: both;
+
+}
+
+.Pajamasproducts s {
+    color: red;
+}
+
+.Pajamas-inner-banner img{
+width: 100%;
+height: 450px;
+    object-fit: cover !important;
+    margin-top: 30px;
+}

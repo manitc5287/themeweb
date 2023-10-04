@@ -1,0 +1,202 @@
+.singleproduct img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.singleproduct{
+    margin-top: 30px;
+}
+
+.singleproduct_content span{
+width: 40px;
+height: 40px;
+background-color: green;
+color: green;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+
+
+.singleproduct_content select {
+    width: 100%;
+    height: 40px;
+    padding: 8px 15px;
+    outline: none;
+}
+
+select option{
+    padding: 10px;
+}
+
+
+/* select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  } */
+
+ 
+
+  select::after {
+    content: '▼'; /* Custom arrow character or image */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  .singleproduct_buttons{
+    display: flex;
+    gap: 10px;
+    
+  }
+
+  .singleproduct_buttons button{
+    flex: 1;
+    padding: 8px 0;
+    background-color: black;
+    color: white;
+   
+    border: none;
+    outline: none;
+  }
+
+   .send_as_a_gift_button{
+    padding: 8px 0;
+    background-color: black;
+    border: none;
+    outline: none;
+ width: 100%;
+ color: white;
+ margin-top: 10px;
+  }
+
+  .singleproduct_icons {
+ text-align: center;
+ margin: 10px 0;
+  }
+
+  .singleproduct_content section{
+    border-bottom: 1px solid #ccc;
+    padding:10px 0;
+  }
+
+  .singleproduct-description small{
+    font-weight: 700;
+    
+  }
+
+
+  .accordion {
+    /* --bs-accordion-color: var(--bs-body-color); */
+    /* --bs-accordion-bg: var(--bs-body-bg); */
+    /* --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease; */
+     --bs-accordion-border-color: transparent; 
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23052c65%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: #86b7fe;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: none;
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+  
+}
+
+
+.accordion-item{
+    border-bottom: 1px solid #ddd;
+}
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+   
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.singlepagenavtabs li {
+  border: 1px solid #ddd ;
+  padding: 5px;
+  margin-right: 5px;
+
+}
+
+
+.singlepagenavtabs li .active{
+  border: 1px solid #ddd ;
+  padding: 5px;
+
+}
+
+
+.singlepagenavtabs {
+  --bs-nav-tabs-border-width: var(--bs-border-width);
+  --bs-nav-tabs-border-color: var(--bs-border-color);
+  --bs-nav-tabs-border-radius: var(--bs-border-radius);
+  --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg) var(--bs-secondary-bg) var(--bs-border-color);
+  --bs-nav-tabs-link-active-color: var(--bs-emphasis-color);
+  --bs-nav-tabs-link-active-bg: var(--bs-body-bg);
+  --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) var(--bs-body-bg);
+  border-bottom: none !important;
+  --bs-nav-tabs-link-active-padding:5px;
+}
+
+
+.tab-pane p{
+  margin-top: 10px;
+}

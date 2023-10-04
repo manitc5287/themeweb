@@ -1,0 +1,46 @@
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form input {
+    height: 40px;
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 20px;
+}
+
+.newsletter-form button{
+     height: 40px;
+     border: none;
+     outline: none;
+     background-color: #c5c5c5;
+     font-weight: 600;
+}
+
+.newsletter{
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width:767px){
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+}

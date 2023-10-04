@@ -1,0 +1,111 @@
+.arrival-banner {
+    background-image: url(../../../../assets/women/arrivals/banner.png);
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.new-arrival-slide .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 27%;
+    right: 5%;
+    cursor: pointer;
+
+    display: none;
+}
+
+.arrival-banner p {
+    color: white;
+    font-size: 35px !important;
+}
+
+
+.arrival-content-grid ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    border-bottom: 1px solid #c8c5c5;
+    line-height: 3;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.new-arrived-sliders {
+    padding: 12px;
+}
+
+.new-arrival-slide {
+    position: relative;
+}
+
+
+
+
+.new-arrival-slide .slider-cart {
+    position: absolute;
+    z-index: 1111;
+    bottom: 25%;
+    right: 5%;
+    cursor: pointer;
+    
+    display: none;
+}
+
+.new-arrival-slide:hover .slider-cart {
+    display: flex;
+    gap: 7px;
+}
+
+.sliderr img {
+    height: 350px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.non-sliderrr img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.arrival-sorting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+}
+
+.arrivaldisplayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.new-arrival-slide p {
+    color: red;
+    font-weight: 600;
+}
+
+.new-arrival-slide small {
+    color: black;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    clear: both;
+
+}
+
+.new-arrival-slide s {
+    color: red;
+}

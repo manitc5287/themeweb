@@ -1,0 +1,105 @@
+
+.react-responsive-modal-modal {
+    max-width: 800px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background: #ffffff;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: 1.2rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow-y: auto;
+    width: 700px;
+}
+
+.loginpopup h4{
+    font-weight: 900;
+}
+
+.loginpopup label{
+    font-size: 14px;
+}
+
+.customloginmodal{
+    width: 700px;
+    
+}
+
+
+
+.login_details .nav-item{
+    margin: 0px auto !important;
+}
+
+.login_details .nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width)); 
+     border: var(--bs-nav-tabs-border-width) solid transparent; 
+    border-top-left-radius: var(--bs-nav-tabs-border-radius); 
+     border-top-right-radius: var(--bs-nav-tabs-border-radius); 
+}
+
+.login_details .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+ 
+}
+
+.login-content {
+    margin-top: 60px;
+    text-align: center;
+    line-height: 2;
+}
+
+.register-content{
+    margin-top: 20px;
+}
+
+.login-content .btn{
+background-color: black;
+color: white;
+width: 100%;
+border-radius: 0 !important;
+}
+
+.loginpage-social{
+    display: flex;
+    gap: 30px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.loginpage-social div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+   flex: 1;
+ color: white;
+ background-color: black;
+ padding: 5px;
+ gap: 5px;
+}
+
+.loginmembershipcard{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+
+.register-content{
+    margin-top: 60px;
+    text-align: center;
+    line-height: 2;
+}
+
+
+.register-content .btn{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 0 !important;
+    }
+
+    
