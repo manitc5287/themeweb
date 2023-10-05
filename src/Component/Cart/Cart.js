@@ -18,10 +18,11 @@ const Cart = () => {
     sevenDaysAhead.setDate(currentDate.getDate() + 7);
     const formattedCurrentDate = currentDate.toISOString().split('T')[0];
     const formattedSevenDaysAhead = sevenDaysAhead.toISOString().split('T')[0];
-    console.log("Current Date:", formattedCurrentDate);
-    console.log("Seven Days Ahead:", formattedSevenDaysAhead);
+  
 
 
+    const shippingCharges = 9;
+    const SalesTax = 18;
 
     const [total, setTotal] = useState(0);
 
@@ -39,7 +40,7 @@ const Cart = () => {
 
     const cartItems = useSelector(state => state.cart);
     const wishItems = useSelector(state => state.wishlist);
-    
+
     console.log(cartItems);
     const dispatch = useDispatch();
 
@@ -57,6 +58,12 @@ const Cart = () => {
     };
 
 
+    const Checkout = () => {
+        localStorage.setItem('cartItems', cartItems);
+        localStorage.setItem('totalAmount', total)
+    }
+
+
     useEffect(() => {
         let totall = 0;
         for (let i = 0; i < cartItems.length; i++) {
@@ -64,7 +71,6 @@ const Cart = () => {
         }
 
         setTotal(totall)
-
     })
 
     return (
@@ -108,10 +114,10 @@ const Cart = () => {
                                                         <small >Unit price: <b> ${item.sale_price}  </b></small>
                                                         <small>Size: {item.size}</small>
                                                         <small>Color: {item.color}</small>
-                                                       
+
 
                                                         <div className='product_div_icons'>
-                                                            <div onClick={()=>addToWish(item)}>
+                                                            <div onClick={() => addToWish(item)}>
                                                                 <Icon icon="ri:heart-add-line" width="18" height="18" />
                                                                 <p>Add To Wishlist</p>
                                                             </div>
@@ -136,6 +142,8 @@ const Cart = () => {
                             }
 
                         </div>
+
+
                         <div className='col-lg-4'>
                             <h4>Order Total</h4>
 
@@ -161,7 +169,7 @@ const Cart = () => {
                             </div>
 
                             <div className='cart_billing'>
-                             
+
 
                                 <div>
                                     <p>Item total</p>
@@ -171,12 +179,12 @@ const Cart = () => {
 
                                 <div>
                                     <p>Sales Tax</p>
-                                    <span>$18.00</span>
+                                    <span>${SalesTax}.00</span>
                                 </div>
 
                                 <div>
                                     <p>Standard shipping total</p>
-                                    <span>$9.00</span>
+                                    <span>${shippingCharges}.00</span>
                                 </div>
 
                                 <div>
@@ -188,11 +196,11 @@ const Cart = () => {
                             <div className='cart-total'>
                                 <div>
                                     <p>Order Total :-</p>
-                                    <span>${total + 9 + 18}.00</span>
+                                    <span>${total + shippingCharges + SalesTax}.00</span>
                                 </div>
 
-                                <span>or 4 payments of ${(total + 9 + 18)/ 4} with <strong> AfterPay </strong><Icon icon="ic:outline-watch-later" width="18" height="18" /></span> <br />
-                                <button className='btn'> Continue</button>
+                                <span>or 4 payments of ${(total + shippingCharges + SalesTax) / 4} with <strong> AfterPay </strong><Icon icon="ic:outline-watch-later" width="18" height="18" /></span> <br />
+                                <Link to="/checkout" ><button className='btn' onClick={() => Checkout()}> Continue</button> </Link>
                             </div>
 
                             <div className='cart_extra_info'>
@@ -222,6 +230,8 @@ const Cart = () => {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>

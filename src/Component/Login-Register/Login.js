@@ -51,7 +51,7 @@ const Login = () => {
         result = await result.json();
         if (result.auth) {
             localStorage.setItem("currentUser", JSON.stringify(result.user))
-            localStorage.setItem("token", JSON.stringify(result))
+            localStorage.setItem("token", JSON.stringify(result.auth))
             navigate("/")
             console.log(result)
         }

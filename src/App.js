@@ -16,6 +16,7 @@ import Cart from './Component/Cart/Cart';
 import Wishlist from './Component/Wishlist/Wishlist';
 import NavListings from './Pages/Women/Categories/NavListings/NavListings';
 import ScrollToTop from './ScrollToTop';
+import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
     <>
@@ -42,7 +43,7 @@ function App() {
         <Route path='women/knitwear/:subcategory' element={<NavListings />}></Route>
         <Route path='women/lingerie/:subcategory' element={<NavListings />}></Route>
         <Route path='women/new-arrivals/:subcategory' element={<NavListings />}></Route>
-
+        <Route path='checkout' element={<Checkout />}></Route>
       </Routes>
     </>
   );

@@ -1,0 +1,323 @@
+.checkout_header img{
+    width: 140px;
+    text-align: center;
+    padding: 10px 0;
+margin: auto;}
+
+.checkout_header {
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 11;
+}
+
+.button_checkout{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+
+}
+
+
+.checkout_header svg{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+
+}
+
+.checkout_main{
+    margin-top: 100px;
+}
+
+.checkout_main .col-8 p{
+  
+       background-color: #EFEBE5;
+        padding: 1.07143rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    font-weight: 600;
+}
+
+
+
+.plans {
+    display: flex;
+    /* justify-content: space-between; */
+    /* max-width: 970px; */
+    /* box-sizing: border-box; */
+    /* background: #fff; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 8px 10px 0px #d8dfeb; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plans .plan input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.plans .plan {
+  cursor: pointer;
+width: 100%;
+}
+
+.plans .plan .plan-content {
+    border: 2px solid #e1e2e7;
+    /* border-radius: 10px; */
+    position: relative;
+}
+
+.plans .plan .plan-content img {
+  margin-right: 30px;
+  height: 72px;
+}
+
+.plans .plan .plan-details span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252f42;
+}
+
+.container .title {
+    font-size: 20px;
+    font-weight: 700;
+    flex-basis: 100%;
+    color: #252f42;
+    margin-bottom: 10px;
+}
+
+.plans .plan .plan-details p {
+    /* color: #646a79; */
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.plans .plan .plan-content:hover {
+  -webkit-box-shadow: 0px 3px 5px 0px #e8e8e8;
+  box-shadow: 0px 3px 5px 0px #e8e8e8;
+}
+
+.plans .plan input[type="radio"]:checked + .plan-content:after {
+  content: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="16" height="16" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4.5 12.75l6 6l9-13.5"%2F%3E%3C%2Fsvg%3E');
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  right: -10px;
+  top: -10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+
+ 
+}
+
+.plans .plan input[type="radio"]:checked + .plan-content {
+  border: 1px solid black;
+  background: #eaf1fe;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+  .plans {
+    margin: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 40px;
+  }
+
+  .plans .plan {
+    width: 100%;
+  }
+
+  .plan.complete-plan {
+    margin-top: 20px;
+  }
+
+  .plans .plan .plan-content .plan-details {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
+    top: 45%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plans .plan .plan-content .plan-details {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .plans .plan .plan-content img {
+    margin-bottom: 20px;
+    height: 56px;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+    transition: height 0.4s;
+  }
+
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
+    top: 20px;
+    right: 10px;
+  }
+
+  .plans .plan .plan-content .plan-details {
+    width: 100%;
+  }
+
+  .plans .plan .plan-content {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+/* inspiration */
+.inspiration {
+  font-size: 12px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 300;
+}
+
+.inspiration a {
+  color: #666;
+}
+@media screen and (max-width: 767px) {
+  /* inspiration */
+  .inspiration {
+    display: none;
+  }
+}
+
+.grid-x.display-name.radio-label.no-margin.dark {
+    padding: 10px 25px;
+}
+
+.cell.font-normal.small-10 {
+    display: flex;
+    gap: 20px;
+}
+
+.cell.strong.small-10.estimated-delivery {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.checkout_main .col-lg-4{
+    position: relative;
+}
+
+.checkout_total{
+
+ 
+}
+
+
+
+.containneer {
+    padding: 2rem  0;
+    margin: 100px auto;
+    height: 100vh;
+
+  }
+
+
+  .containneer .title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    flex-basis: 100% !important;
+    color: #252f42 !important;
+    margin-bottom: 30px !important;
+}
+  
+  .form {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  .field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-lighter-gray);
+    padding: .5rem;
+    border-radius: .25rem;
+  }
+  
+  .field__label {
+    color: var(--color-gray);
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem
+  }
+  
+  .field__input {
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    outline: 1px solid black;
+}
+
+  .field:focus-within {
+    border-color: #000;
+  }
+  
+  .fields {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .fields--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fields--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+
+  .button:focus-visible {
+    background-color: #333;
+  }
+
+@media only screen and (max-width:767px){
+
+}
